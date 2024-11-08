@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ .container-fluid{
+    padding:0%;
+} 
+.intern-card{
+    display: flex;
+    width: 256px;
+    height: 200px;
+    padding: 0%;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+}
+.child-box{
+    width: 100%;
+    align-content: center;
+    text-align:center;
+}
+.child-h1{
+    font-family: 'Rawline', sans-serif;
+    font-size: 18px;
+    color: #0C326F;
+}
+.parent-box {
+    display: flex;
+    justify-content: space-between;
+}
+.inline{
+    display: inline;
+}
+.mini-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+    width: 38px;
+    height: 38px;
+    font-size: 28px;
+
+}
+.size-h1{
+    display: inline-flex;
+    width: 105px;
+}
+
+
+
+/* CUSTOM MARGINS PADDINGS */
+    .m-right{
+        margin-right: 288px;
+    }
+    .m-left{
+        margin-left: 288px;
+    }
+    .m-top{
+        margin-top: 40px;
+    }
+
+    .p-bottom{
+        padding-bottom: 177px;
+    }
+    .m-box{
+        margin: 30px;
+    }
+    .mb-row-sup{
+        margin-top: 300px;
+    }
+    .mt-cont{
+        margin-top: 30px;
+    }
+
+    .bg-teste{
+        background-color:#FFD000;
+    }
+    .full-size-link {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none; 
+        color: inherit; 
+        top: 0;
+        left: 0;
+      }
+
+
+
+/* TEMPLATE*/
+
+    /* background-colors */
+    .bg-blue{
+        background-color: #1B77BC;
+    }
+    .bg-light-gray{
+        background-color:#EDEDED;
+    }
+    .custom-bg{
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center center;  
+        overflow: hidden; 
+        margin: 0;
+        padding: 0; 
+        padding-bottom: 50px;
+        margin-bottom:-32px;
+    }
+
+    
+
+    /* font-colors */
+     
+    .deep-gray{
+        color: #333333;
+    }
+    .gray{
+        color:#636363;
+    }
+    .yellow{
+        color:#FFD000;
+    }
+    .red{
+        color:#E61C22;
+    }
+
+    .card-font{
+        font-family: 'Rawline', sans-serif;
+        font-size: 18px;
+        color: #0C326F;
+    }
+    .card-row{
+        height: 294px;
+        background-color:  #0C326F;
+    }
+
+
+    /* STYLE */
+        .font-rawline {
+            font-family: 'Rawline', sans-serif;
+        } 
+
+
+    /* SIZE */
+        .small{
+            font-size: 16px;
+        }
+        .medium{
+            font-size: 28px;
+        } 
+        .large{
+            font-size: 50px;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+
+/* ICON */
+        .icon-menu{
+            width: 28px;
+            height: 28px; 
+            background-image: url(icon/icone-menu.png);
+            background-repeat: no-repeat;
+        }
+        .icon-arrow{
+            width: 24px;
+            height: 24px;
+            background-image: url(icon/arrow-down-2-bold.png);
+            
+        }
+
+/* SIZE */
+
+    @media (min-width: 1400px) {
+            .bg-image {
+                height: 100%;
+                background-image: url('images/dnit.jpg');
+                background-repeat: repeat;
+                background-attachment: scroll;
+                background-size: contain;
+                background-position: center center;  
+                overflow: hidden; 
+                margin: 0;
+                padding: 0; 
+                padding-bottom: 50px;
+                margin-bottom:-32px;
+            }
+    }
+
+/* animation */
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .red-background {
+    background-color: red;
+  }
+
+  .card {
+    background-color: #F8F8F8;
+  }
+  .card:hover {
+    background-color: #DBE8FB; /* Adiciona uma sombra */
+    cursor: pointer;
+  }
+
+
