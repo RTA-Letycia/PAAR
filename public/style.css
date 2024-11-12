@@ -4,9 +4,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
- .container-fluid{
-    padding:0%;
-} 
 .intern-card{
     display: flex;
     width: 256px;
@@ -46,6 +43,27 @@ html, body {
     display: inline-flex;
     width: 105px;
 }
+
+
+
+/*Filter*/
+    .dropdown-menu{
+        display: none;
+    }
+    .custom-dropdown:hover .dropdown-menu{
+        display: flex;
+    }
+
+    /* .custom-w-filter-input{
+        width: 1400px;
+    } */
+    .row input{
+        width: 100%;
+    }
+    .custom-dropdown{
+        display: flex;
+        flex-direction: column;
+    }
 
 
 

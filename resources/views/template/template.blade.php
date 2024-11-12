@@ -16,7 +16,7 @@
 </head>
 <body class="cust-body custom-bg">
         <header class="container-fluid">
-                    <div class="row flex-column">
+                    <div class="flex-column">
                         <!-- row header    -->
                         <div class="row justify-content-end">
                             <div class="col-12 col-md-6 col-lg-2 d-flex justify-content-end align-items-end mr-5 p-0">
@@ -34,11 +34,9 @@
                         </div>
                     </div>
         </header>
-    <main>
-        <div class="container-fluid">
-            @yield('content')
-        </div>
-    </main> 
+        <main class="container-fluid h-100">
+                @yield('content')
+        </main> 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.bundle.js') }}" defer></script> 
     <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
