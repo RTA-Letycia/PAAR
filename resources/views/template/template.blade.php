@@ -7,6 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}"> 
     <link rel="stylesheet" href="{{ asset('/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
     <script src="{{ asset('style.js') }}"></script>
     <style>
         .cust-body{
@@ -19,7 +21,7 @@
                     <div class="flex-column">
                         <!-- row header    -->
                         <div class="row justify-content-end">
-                            <div class="col-12 col-md-6 col-lg-2 d-flex justify-content-end align-items-end mr-5 p-0">
+                            <div class="col-lg-2 d-flex justify-content-end align-items-end mr-5 p-header-right">
                                 <h1 class="deep-gray font-rawline small mr-1">Olá,</h1>
                                 <h1 class="deep-gray font-rawline small"><strong>Usuário</strong></h1>
                                 <div class="icon-arrow"></div>
@@ -27,7 +29,7 @@
                         </div>
                             <!-- 2 header -->
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-12 d-flex align-items-center ml-5 p-0">
+                            <div class="col-lg-4 d-flex align-items-center ml-5 p-header-left">
                                 <div class="icon-menu mr-2"></div>
                                 <h1 class="deep-gray font-rawline small pt-2">Departamento Nacional de Infraestrutura de Transportes</h1>  
                             </div>

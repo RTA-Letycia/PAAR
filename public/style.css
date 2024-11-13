@@ -50,30 +50,46 @@ html, body {
     .dropdown-menu{
         display: none;
     }
+    .custom-dropdown:hover{
+        background-color: #2670E8;
+        color: #F8F8F8;
+        
+    }
     .custom-dropdown:hover .dropdown-menu{
         display: flex;
     }
 
-    /* .custom-w-filter-input{
-        width: 1400px;
-    } */
+    .custom-filter{
+        height: 52px;
+        background-color: #EDEDED;
+        border: none;
+    }
+    .no-outline:focus{
+        outline: none;
+        box-shadow: none;
+    } 
+    .rounded-top-left {
+        border-top-left-radius: 5px; 
+    }
     .row input{
         width: 100%;
     }
     .custom-dropdown{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
-
-
-
 /* CUSTOM MARGINS PADDINGS */
-    .m-right{
-        margin-right: 288px;
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+    @media (min-width: 1400px){
+        .p-header-right{
+            padding-right: 26px;
+        }
+        .p-header-left{
+            padding-left: 26px;
+        }
     }
-    .m-left{
-        margin-left: 288px;
-    }
+
     .m-top{
         margin-top: 40px;
     }
@@ -133,7 +149,10 @@ html, body {
     
 
     /* font-colors */
-     
+    
+    .light-blue{
+        color: #2670E8;
+    }
     .deep-gray{
         color: #333333;
     }
@@ -189,6 +208,8 @@ html, body {
             width: 24px;
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
+        }
+        .arrow-down{
             
         }
 
