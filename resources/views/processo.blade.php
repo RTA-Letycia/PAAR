@@ -3,10 +3,10 @@
 
 
 @section('content')
-    <hr class="col-lg-11">
-    <div class="row d-flex justify-content-center mt-5 mb-4">
-        <input class="col-lg-10 custom-filter no-outline rounded-top-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
-        <div class="col-lg-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center">
+    <hr class="col-sm-9 col-md-10 col-lg-11">
+    <div class="row d-flex justify-content-center mt-5 mb-4 mt-sm-4">
+        <input class="col-sm-7 col-md-8 col-lg-10 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
+        <div class="col-sm-2 col-lg-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-left">
                     Filtro
             <span class="material-symbols-outlined light-blue">
                 arrow_drop_down
@@ -26,6 +26,6 @@
             @endforeach
         </div> -->
     </div>  
-    <hr class="col-lg-11"> 
+    <hr class="col-sm-9 col-md-10 col-lg-11"> 
 
 @endsection

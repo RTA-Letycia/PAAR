@@ -58,7 +58,13 @@ html, body {
     .custom-dropdown:hover .dropdown-menu{
         display: flex;
     }
-
+    .col-sm-2.col-lg-1.btn:hover .material-symbols-outlined.light-blue {
+        color: #F8F8F8;
+    }
+    .dropdown-menu .dropdown-item:hover{
+        background-color: #2670E8;
+        color: #F8F8F8;
+    }
     .custom-filter{
         height: 52px;
         background-color: #EDEDED;
@@ -68,8 +74,13 @@ html, body {
         outline: none;
         box-shadow: none;
     } 
-    .rounded-top-left {
-        border-top-left-radius: 5px; 
+    .rounded-input-left {
+        border-top-left-radius: 6px; 
+        border-bottom-left-radius: 6px; 
+    }
+    .rounded-button-left {
+        border-top-right-radius: 6px; 
+        border-bottom-right-radius: 6px; 
     }
     .row input{
         width: 100%;
@@ -81,12 +92,34 @@ html, body {
 /* CUSTOM MARGINS PADDINGS */
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-    @media (min-width: 1400px){
-        .p-header-right{
-            padding-right: 26px;
+    @media (min-width: 576px){
+        .custom-m{
+            margin-left: 54px;
+            margin-right: 55px;
         }
-        .p-header-left{
-            padding-left: 26px;
+    }
+    @media (min-width: 768px){
+        .custom-m{
+            margin-left: 44px;
+            margin-right: 46px;
+        }
+    }
+    @media (min-width: 992px){
+        .custom-m{
+            margin-left: 22px;
+            margin-right: 26px;
+        }
+    }
+    @media (min-width: 1200px){
+        .custom-m{
+            margin-left: 46px;
+            margin-right: 48px;
+        }
+    }
+    @media (min-width: 1400px){
+        .custom-m{
+            margin-left: 76px;
+            margin-right: 76px;
         }
     }
 
