@@ -44,8 +44,6 @@ html, body {
     width: 105px;
 }
 
-
-
 /*Filter*/
     .dropdown-menu{
         display: none;
@@ -53,7 +51,6 @@ html, body {
     .custom-dropdown:hover{
         background-color: #2670E8;
         color: #F8F8F8;
-
     }
     .custom-dropdown:hover .dropdown-menu{
         display: flex;
@@ -74,17 +71,21 @@ html, body {
         outline: none;
         box-shadow: none;
     }
+    .rounded-button-left {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
     .rounded-input-left {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
     }
+>>>>>>> Stashed changes
     .rounded-button-right{
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
->>>>>>> Stashed changes
     .row input{
         width: 100%;
     }
@@ -92,9 +93,6 @@ html, body {
         display: flex;
         flex-direction: column;
     }
-
-
-
 /* CUSTOM MARGINS PADDINGS */
     .m-right{
         margin-right: 288px;
@@ -164,7 +162,6 @@ html, body {
     .light-blue{
         color: #2670E8;
     }
->>>>>>> Stashed changes
     .deep-gray{
         color: #333333;
     }
@@ -220,7 +217,6 @@ html, body {
             width: 24px;
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
-        }
 /* SIZE */
 
     @media (min-width: 1400px) {
