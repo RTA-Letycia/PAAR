@@ -53,7 +53,7 @@ html, body {
     .custom-dropdown:hover{
         background-color: #2670E8;
         color: #F8F8F8;
-        
+>>>>>>> 3-input-field-and-dropdown-button
     }
     .custom-dropdown:hover .dropdown-menu{
         display: flex;
@@ -73,15 +73,29 @@ html, body {
     .no-outline:focus{
         outline: none;
         box-shadow: none;
-    } 
+<<<<<<< HEAD
+    }
     .rounded-input-left {
-        border-top-left-radius: 6px; 
-        border-bottom-left-radius: 6px; 
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
     }
     .rounded-button-left {
-        border-top-right-radius: 6px; 
-        border-bottom-right-radius: 6px; 
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
     }
+=======
+    .rounded-input-left {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .rounded-button-right{
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+>>>>>>> Stashed changes
+>>>>>>> 3-input-field-and-dropdown-button
     .row input{
         width: 100%;
     }
@@ -144,13 +158,13 @@ html, body {
         background-color:#FFD000;
     }
     .full-size-link {
-        display: flex; 
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
-        text-decoration: none; 
-        color: inherit; 
+        text-decoration: none;
+        color: inherit;
         top: 0;
         left: 0;
       }
@@ -171,21 +185,22 @@ html, body {
         background-repeat: repeat;
         background-attachment: scroll;
         background-size: contain;
-        background-position: center center;  
-        overflow: hidden; 
+        background-position: center center;
+        overflow: hidden;
         margin: 0;
-        padding: 0; 
+        padding: 0;
         padding-bottom: 50px;
         margin-bottom:-32px;
     }
 
-    
+
 
     /* font-colors */
-    
     .light-blue{
         color: #2670E8;
     }
+>>>>>>> Stashed changes
+>>>>>>> 3-input-field-and-dropdown-button
     .deep-gray{
         color: #333333;
     }
@@ -213,7 +228,7 @@ html, body {
     /* STYLE */
         .font-rawline {
             font-family: 'Rawline', sans-serif;
-        } 
+        }
 
 
     /* SIZE */
@@ -222,7 +237,7 @@ html, body {
         }
         .medium{
             font-size: 28px;
-        } 
+        }
         .large{
             font-size: 50px;
         }
@@ -233,7 +248,7 @@ html, body {
 /* ICON */
         .icon-menu{
             width: 28px;
-            height: 28px; 
+            height: 28px;
             background-image: url(icon/icone-menu.png);
             background-repeat: no-repeat;
         }
@@ -241,11 +256,13 @@ html, body {
             width: 24px;
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
+<<<<<<< HEAD
         }
         .arrow-down{
-            
-        }
 
+=======
+>>>>>>> 3-input-field-and-dropdown-button
+        }
 /* SIZE */
 
     @media (min-width: 1400px) {
@@ -255,10 +272,10 @@ html, body {
                 background-repeat: repeat;
                 background-attachment: scroll;
                 background-size: contain;
-                background-position: center center;  
-                overflow: hidden; 
+                background-position: center center;
+                overflow: hidden;
                 margin: 0;
-                padding: 0; 
+                padding: 0;
                 padding-bottom: 50px;
                 margin-bottom:-32px;
             }
