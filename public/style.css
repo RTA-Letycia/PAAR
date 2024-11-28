@@ -70,6 +70,15 @@ html, body {
     .no-outline:focus{
         outline: none;
         box-shadow: none;
+
+    }
+    .rounded-input-left {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .rounded-button-left {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
     }
     .rounded-button-left {
         border-top-right-radius: 6px;
@@ -79,7 +88,6 @@ html, body {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
     }
->>>>>>> Stashed changes
     .rounded-button-right{
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
@@ -91,15 +99,42 @@ html, body {
     }
     .custom-dropdown{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 /* CUSTOM MARGINS PADDINGS */
-    .m-right{
-        margin-right: 288px;
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+    @media (min-width: 576px){
+        .custom-m{
+            margin-left: 54px;
+            margin-right: 55px;
+        }
     }
-    .m-left{
-        margin-left: 288px;
+    @media (min-width: 768px){
+        .custom-m{
+            margin-left: 44px;
+            margin-right: 46px;
+        }
     }
+    @media (min-width: 992px){
+        .custom-m{
+            margin-left: 22px;
+            margin-right: 26px;
+        }
+    }
+    @media (min-width: 1200px){
+        .custom-m{
+            margin-left: 46px;
+            margin-right: 48px;
+        }
+    }
+    @media (min-width: 1400px){
+        .custom-m{
+            margin-left: 76px;
+            margin-right: 76px;
+        }
+    }
+
     .m-top{
         margin-top: 40px;
     }
