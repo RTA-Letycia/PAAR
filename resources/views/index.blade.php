@@ -23,21 +23,21 @@
             </div>
             <div class="col-12 col-md-6 col-lg-2 ">
                 <div class="row d-flex justify-content-center">
-                    <div class="intern-card card col-lg-8 align-items-center justify-content-center">
+                    <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
                         <h1 class="font-rawline small text-lg-center">Histórico<br>de<br>Movimentações</h1>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-2">
                 <div class="row d-flex justify-content-center">
-                    <div class="intern-card card col-lg-8 align-items-center justify-content-center">
+                    <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
                         <h1 class="font-rawline small">Lembretes</h1>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-2">
                 <div class="row d-flex justify-content-center">
-                    <div class="intern-card card col-lg-8 align-items-center justify-content-center">
+                    <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
                             <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('process')}}" >
                             <h1 class="font-rawline small">Processos</h1>
                             </a>
