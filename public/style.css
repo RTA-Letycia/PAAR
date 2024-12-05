@@ -106,73 +106,7 @@ html, body {
     .custom-dropdown{
         display: flex;
     }
-/* CUSTOM MARGINS PADDINGS */
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-    @media (min-width: 576px){
-        .custom-m{
-            margin-left: 54px;
-            margin-right: 55px;
-        }
-    }
-    @media (min-width: 768px){
-        .custom-m{
-            margin-left: 44px;
-            margin-right: 46px;
-        }
-    }
-    @media (min-width: 992px){
-        .custom-m{
-            margin-left: 22px;
-            margin-right: 26px;
-        }
-    }
-    @media (min-width: 1200px){
-        .custom-m{
-            margin-left: 46px;
-            margin-right: 48px;
-        }
-    }
-    @media (min-width: 1400px){
-        .custom-m{
-            margin-left: 76px;
-            margin-right: 76px;
-        }
-    }
-
-    .m-top{
-        margin-top: 40px;
-    }
-
-    .p-bottom{
-        padding-bottom: 177px;
-    }
-    .m-box{
-        margin: 30px;
-    }
-    .mb-row-sup{
-        margin-top: 300px;
-    }
-    .mt-cont{
-        margin-top: 30px;
-    }
-
-    .bg-teste{
-        background-color:#FFD000;
-    }
-
-
-
-/* TEMPLATE*/
-
-    /* background-colors */
-    .bg-blue{
-        background-color: #1B77BC;
-    }
-    .bg-light-gray{
-        background-color:#EDEDED;
-    }
-    .custom-bg{
+     .custom-bg{
         height: 100%;
         background-repeat: repeat;
         background-attachment: scroll;
@@ -186,7 +120,63 @@ html, body {
     }
 
 
+/* XX-Large devices (larger desktops, 1400px and up)*/
+    @media (min-width: 576px){
+        .custom-m{
+            margin-left: 54px;
+            margin-right: 55px;
+        }
+        .mb-row-sup{
+            margin-top: 20px;
+        }
+        .card-row{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        }
+    }
+    @media (min-width: 768px){
+        .custom-m{
+            margin-left: 44px;
+            margin-right: 46px;
+        }
+    }
+    @media (min-width: 992px){
+        .custom-m{
+            margin-left: 22px;
+            margin-right: 26px;
+        }
+        .mb-row-sup{
+            margin-top: 183px;
+        }
+        .card-row{
+            flex-direction:row;
+            height: 294px;
+            background-color:  #0C326F;
+        }
+        .custom-bg {
+            background-size: cover;
+        }
+    }
+    @media (min-width: 1200px){
+        .custom-bg{
+            background-size: contain;
+        }
+    }
+    @media (min-width: 1400px){
+        .mb-row-sup{
+            margin-top: 205px;
+        }
+    }
+/* TEMPLATE*/
 
+    /* background-colors */
+    .bg-blue{
+        background-color: #1B77BC;
+    }
+    .bg-light-gray{
+        background-color:#EDEDED;
+    }
     /* font-colors */
     .light-blue{
         color: #2670E8;
@@ -203,12 +193,6 @@ html, body {
     .red{
         color:#E61C22;
     }
-    .card-row{
-        height: 294px;
-        background-color:  #0C326F;
-    }
-
-
     /* STYLE */
         .font-rawline {
             font-family: 'Rawline', sans-serif;
@@ -241,23 +225,7 @@ html, body {
             width: 24px;
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
-/* SIZE */
-
-    @media (min-width: 1400px) {
-            .bg-image {
-                height: 100%;
-                background-image: url('images/dnit.jpg');
-                background-repeat: repeat;
-                background-attachment: scroll;
-                background-size: contain;
-                background-position: center center;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-                padding-bottom: 50px;
-                margin-bottom:-32px;
-            }
-    }
+        }
 
 /* animation */
 .blink {
@@ -369,38 +337,6 @@ html, body {
     }
 /* CUSTOM MARGINS PADDINGS */
 
-/* XX-Large devices (larger desktops, 1400px and up)*/
-    @media (min-width: 576px){
-        .custom-m{
-            margin-left: 54px;
-            margin-right: 55px;
-        }
-    }
-    @media (min-width: 768px){
-        .custom-m{
-            margin-left: 44px;
-            margin-right: 46px;
-        }
-    }
-    @media (min-width: 992px){
-        .custom-m{
-            margin-left: 22px;
-            margin-right: 26px;
-        }
-    }
-    @media (min-width: 1200px){
-        .custom-m{
-            margin-left: 46px;
-            margin-right: 48px;
-        }
-    }
-    @media (min-width: 1400px){
-        .custom-m{
-            margin-left: 76px;
-            margin-right: 76px;
-        }
-    }
-
     .m-top{
         margin-top: 40px;
     }
@@ -411,10 +347,7 @@ html, body {
     .m-box{
         margin: 30px;
     }
-    .mb-row-sup{
-        margin-top: 300px;
-    }
-    .mt-cont{
+       .mt-cont{
         margin-top: 30px;
     }
 
@@ -444,21 +377,6 @@ html, body {
     .bg-light-gray{
         background-color:#EDEDED;
     }
-    .custom-bg{
-        height: 100%;
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-size: contain;
-        background-position: center center;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-        margin-bottom:-32px;
-    }
-
-
-
     /* font-colors */
     .light-blue{
         color: #2670E8;
@@ -481,12 +399,6 @@ html, body {
         font-size: 18px;
         color: #0C326F;
     }
-    .card-row{
-        height: 294px;
-        background-color:  #0C326F;
-    }
-
-
     /* STYLE */
         .font-rawline {
             font-family: 'Rawline', sans-serif;
@@ -518,23 +430,7 @@ html, body {
             width: 24px;
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
-/* SIZE */
-
-    @media (min-width: 1400px) {
-            .bg-image {
-                height: 100%;
-                background-image: url('images/dnit.jpg');
-                background-repeat: repeat;
-                background-attachment: scroll;
-                background-size: contain;
-                background-position: center center;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-                padding-bottom: 50px;
-                margin-bottom:-32px;
-            }
-    }
+       }
 
 /* animation */
 .blink {
