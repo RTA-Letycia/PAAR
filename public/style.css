@@ -4,6 +4,10 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.container-fluid{
+    padding:0;
+    margin:0;
+}
 .intern-card{
     display: flex;
     width: 256px;
@@ -24,10 +28,16 @@ html, body {
     align-content: center;
     text-align:center;
 }
-.child-h1{
+.custom-h1{
     font-family: 'Rawline', sans-serif;
-    font-size: 18px;
+    font-size: 32px;
     color: #0C326F;
+    font-weight:400;
+}
+.table .custom-h1{
+    font-size: 14px;
+    color: #333333;
+    font-weight:300;
 }
 .parent-box {
     display: flex;
@@ -87,20 +97,11 @@ html, body {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
     }
-    .rounded-button-left {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
     .rounded-input-left {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
     }
-    .rounded-button-right{
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+
     .row input{
         width: 100%;
     }
@@ -119,10 +120,6 @@ html, body {
         padding-bottom: 50px;
         margin-bottom:-32px;
     }
-        .custom-m{
-            margin-left: 54px;
-            margin-right: 55px;
-        }
         .mt-row-inf{
             margin-top: 184px;
         }
@@ -141,8 +138,7 @@ html, body {
     }
     @media (min-width: 992px){
         .custom-m{
-            margin-left: 22px;
-            margin-right: 26px;
+            margin:15px 0 15px 0;
         }
         .mt-row-inf{
             margin-top: 200px;
@@ -251,38 +247,6 @@ html, body {
   .red-background {
     background-color: red;
   }
-  .child-box{
-    width: 100%;
-    align-content: center;
-    text-align:center;
-}
-.child-h1{
-    font-family: 'Rawline', sans-serif;
-    font-size: 18px;
-    color: #0C326F;
-}
-.parent-box {
-    display: flex;
-    justify-content: space-between;
-}
-.inline{
-    display: inline;
-}
-.mini-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #EDEDED;
-    width: 38px;
-    height: 38px;
-    font-size: 28px;
-
-}
-.size-h1{
-    display: inline-flex;
-    width: 105px;
-}
-
 /*Filter*/
     .dropdown-menu{
         display: none;
@@ -318,14 +282,6 @@ html, body {
     .rounded-button-left {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
-    }
-    .rounded-button-left {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
-    .rounded-input-left {
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
     }
     .rounded-button-right{
         border-top-right-radius: 6px;
@@ -460,6 +416,20 @@ html, body {
   /*button*/
   .btn{
       display:flex;
-      text-align:center;
       align-items:center;
+      height:46px;
+      width:150px;
+      font-size:16px;
+      border-radius:56px;
   }
+   .rounded-button-right{
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height:52px;
+    }
+    /*table*/
+    .table-border{
+        border: 1px solid #EDEDED;
+    }

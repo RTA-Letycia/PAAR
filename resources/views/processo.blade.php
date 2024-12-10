@@ -1,8 +1,10 @@
 @extends('template.template')
 
 @section('content')
-    <hr class="col-sm-8 col-md-10 col-lg-11">
-    <div class="row d-flex justify-content-center mt-4 mb-4 mt-sm-4">
+    <div class="row justify-content-center pr-4 pl-2">
+        <hr class="col-sm-8 col-md-10 col-lg-11 custom-m">
+    </div>
+    <div class="row d-flex justify-content-center mt-4 mb-4 pb-4 mt-sm-4 pr-3">
         <input class="col-sm-6 col-md-8 col-lg-10 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
         <div class="col-sm-1 col-lg-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-right">
                     Filtro
@@ -18,8 +20,50 @@
             </div>
         </div>
     </div>
-    <hr class="col-sm-9 col-md-10 col-lg-11">
+    <div class="row justify-content-between mr-5 ml-5 mb-3">
+        <div class="col-lg-4 d-flex p-0">
+            <h1 class="custom-h1">Processos Gerenciados</h1>
+        </div>
+        <div class="col-lg-2 d-flex justify-content-end">
+            <button class="btn btn-primary justify-content-center">Inserir Processo</button>
+        </div>
     </div>
-    </div>
+    <div class= "row justify-content-center">
+        <div class="col-11 d-flex p-0">
+            <table class="table table-hover table-border">
+                <thead class="bg-light-gray font-rawline custom-h1">
+                    <tr>
+                        <th scope="col">Tipo de Contrato</th>
+                        <th scope="col">Nº Processo</th>
+                        <th scope="col">Data de Abertura</th>
+                        <th scope="col">Assunto / Motivação</th>
+                        <th scope="col">ICONE</th>
+                        <th scope="col">Local</th>
+                        <th scope="col">Empresa Responsável</th>
+                        <th scope="col">CNPJ</th>
+                        <th scope="col">Última Movimentação</th>
+                        <th scope="col">Status PAAR</th>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 @endsection
