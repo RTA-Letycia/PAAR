@@ -24,8 +24,10 @@
         <div class="col-lg-4 d-flex p-0">
             <h1 class="custom-h1">Processos Gerenciados</h1>
         </div>
-        <div class="col-lg-2 d-flex justify-content-end">
-            <button class="btn btn-primary justify-content-center">Inserir Processo</button>
+        <div class="d-flex justify-content-end pr-3">
+            <a class="btn bg-light-gray justify-content-center intern-card-hover" href="{{route('processIns')}}">
+                <h1 class="custom-h1">Inserir Processo</h1>
+            </a>
         </div>
     </div>
     <div class= "row justify-content-center">
@@ -44,10 +46,11 @@
                         <th scope="col">Última Movimentação</th>
                         <th scope="col">Status PAAR</th>
                 <tbody>
+                {{--@foreach($procs as $proc)--}}
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        {{--<th scope="row">{{$proc->id}}</th>--}}
+                        {{--<td>{{$proc->num}}</td>--}}
+                        <td></td>
                         <td>@mdo</td>
                         </tr>
                     <tr>

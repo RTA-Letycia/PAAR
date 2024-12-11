@@ -39,6 +39,10 @@ html, body {
     color: #333333;
     font-weight:300;
 }
+a h1.custom-h1{
+    font-size:16px;
+    color:#212529;
+}
 .parent-box {
     display: flex;
     justify-content: space-between;
@@ -84,11 +88,6 @@ html, body {
         background-color: #EDEDED;
         border: none;
     }
-    .no-outline:focus{
-        outline: none;
-        box-shadow: none;
-
-    }
     .rounded-input-left {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
@@ -97,11 +96,6 @@ html, body {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
     }
-    .rounded-input-left {
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-
     .row input{
         width: 100%;
     }
@@ -170,50 +164,26 @@ html, body {
     @media (min-width: 1400px){
     }
 /* TEMPLATE*/
-
-    /* background-colors */
-    .bg-blue{
-        background-color: #1B77BC;
-    }
-    .bg-light-gray{
-        background-color:#EDEDED;
-    }
-    /* font-colors */
-    .light-blue{
-        color: #2670E8;
-    }
-    .deep-gray{
-        color: #333333;
-    }
-    .gray{
-        color:#636363;
-    }
-    .yellow{
-        color:#FFD000;
-    }
-    .red{
-        color:#E61C22;
-    }
-    /* STYLE */
+       /* STYLE */
         .font-rawline {
             font-family: 'Rawline', sans-serif;
         }
 
 
     /* SIZE */
-        .small{
-            font-size: 18px;
-        }
-        .medium{
-            font-size: 28px;
-        }
-        .large{
-            font-size: 50px;
-        }
-        h1{
-            margin-bottom: 0;
-            color: #333333;
-        }
+        /*.small{*/
+            /*font-size: 18px;*/
+        /*}*/
+        /*.medium{*/
+            /*font-size: 28px;*/
+        /*}*/
+        /*.large{*/
+            /*font-size: 50px;*/
+        /*}*/
+/*        h1{*/
+            /*margin-bottom: 0;*/
+            /*color: #333333;*/
+       /* }*/
 
 /* ICON */
         .icon-menu{
@@ -248,56 +218,11 @@ html, body {
     background-color: red;
   }
 /*Filter*/
-    .dropdown-menu{
-        display: none;
-    }
-    .custom-dropdown:hover{
-        background-color: #2670E8;
-        color: #F8F8F8;
-    }
-    .custom-dropdown:hover .dropdown-menu{
-        display: flex;
-    }
-    .col-sm-2.col-lg-1.btn:hover .material-symbols-outlined.light-blue {
-        color: #F8F8F8;
-    }
-    .dropdown-menu .dropdown-item:hover{
-        background-color: #2670E8;
-        color: #F8F8F8;
-    }
-    .custom-filter{
-        height: 52px;
-        background-color: #EDEDED;
-        border: none;
-    }
     .no-outline:focus{
         outline: none;
         box-shadow: none;
-
     }
-    .rounded-input-left {
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-    .rounded-button-left {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
-    .rounded-button-right{
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .row input{
-        width: 100%;
-    }
-    .custom-dropdown{
-        display: flex;
-        /* flex-direction: column; */
-    }
-/* CUSTOM MARGINS PADDINGS */
-
+    /* CUSTOM MARGINS PADDINGS */
     .m-top{
         margin-top: 40px;
     }
@@ -315,22 +240,6 @@ html, body {
     .bg-teste{
         background-color:#FFD000;
     }
-    /*.full-size-link {*/
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*text-decoration: none;*/
-        /*color: inherit;*/
-        /*top: 0;*/
-        /*left: 0;*/
-      /*}*/
-
-
-
-/* TEMPLATE*/
-
     /* background-colors */
     .bg-blue{
         background-color: #1B77BC;
@@ -354,7 +263,6 @@ html, body {
     .red{
         color:#E61C22;
     }
-
     .card-font{
         font-family: 'Rawline', sans-serif;
         font-size: 18px;
@@ -364,8 +272,6 @@ html, body {
         .font-rawline {
             font-family: 'Rawline', sans-serif;
         }
-
-
     /* SIZE */
         .small{
             font-size: 16px;
@@ -378,6 +284,7 @@ html, body {
         }
         h1{
             margin-bottom: 0;
+            color: #333333;
         }
 
 /* ICON */
@@ -418,7 +325,8 @@ html, body {
       display:flex;
       align-items:center;
       height:46px;
-      width:150px;
+      width:100%;
+      white-space:wrap;
       font-size:16px;
       border-radius:56px;
   }

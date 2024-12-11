@@ -24,14 +24,26 @@ class ProController extends Controller
     {
         return view('index');
     }
+    public function map()
+    {
+        return view('map');
+    }
+    public function move()
+    {
+        return view ('move');
+    }
+    public function processIns()
+    {
+        return view('processIns');
+    }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create(){
-        
+
     }
-    
+
     /**
      * Store a newly created resource in storage.
      */
@@ -39,20 +51,23 @@ class ProController extends Controller
     {
         //
     }
-    
+
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
         //require parameter id
+        $show=$this->objProc->find($id);
+        return view('processo', compact('show'));
     }
 
     public function process()
     {
-        $processes=$this->objProc->all();
+        //$processes=$this->objProc->all();
         //  dd('teste de depuração');
-         return view('processo', compact('processes'));
+         //return view('processo', compact('processes'));
+         return view('processo');
     }
 
     /**
