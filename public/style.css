@@ -88,13 +88,30 @@ a h1.custom-h1{
         background-color: #EDEDED;
         border: none;
     }
+    .no-outline:focus{
+        outline: none;
+        box-shadow: none;
+    }
+/*>>>>>>> 7aeeae9 (:bug: uninstall test db and implement latest db. Fixes #14)*/
+    /*.rounded-input-left {*/
+        /*border-top-left-radius: 6px;*/
+        /*border-bottom-left-radius: 6px;*/
+    /*}*/
+    /*.rounded-button-left {*/
+        /*border-top-right-radius: 6px;*/
+        /*border-bottom-right-radius: 6px;*/
+    /*}*/
+/*<<<<<<< HEAD*/
+/*=======*/
     .rounded-input-left {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
     }
-    .rounded-button-left {
+    .rounded-button-right{
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     .row input{
         width: 100%;
@@ -102,24 +119,25 @@ a h1.custom-h1{
     .custom-dropdown{
         display: flex;
     }
-     .custom-bg{
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center center;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-        margin-bottom:-32px;
-    }
+/*     .custom-bg{*/
+        /*height: 100%;*/
+        /*background-repeat: no-repeat;*/
+        /*background-attachment: scroll;*/
+        /*background-size: cover;*/
+        /*background-position: center center;*/
+        /*overflow: hidden;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*padding-bottom: 50px;*/
+        /*margin-bottom:-32px;*/
+    /*}*/
         .mt-row-inf{
             margin-top: 184px;
         }
         .card-row{
             display:flex;
-            height: 185px;
+            /*height: 185px;*/
+            height: 294px;
             background-color: #0C326F;
             justify-content:space-around;
             flex-wrap: nowrap;
@@ -144,7 +162,7 @@ a h1.custom-h1{
     }
     @media (min-width: 1200px){
             .mt-row-inf{
-                margin-top: 150px;
+                margin-top: 216px;
         }
             .card-row{
                 justify-content: center;
@@ -153,24 +171,55 @@ a h1.custom-h1{
             height:126px;
         }
     }
-    @media (min-width: 1200px){
-       /* .custom-bg{*/
-            /*background-size: contain;*/
-        /*}*/
-            .mt-row-inf{
-            margin-top: 216px;
-        }
-    }
     @media (min-width: 1400px){
     }
 /* TEMPLATE*/
-       /* STYLE */
+    /* background-colors */
+    .bg-blue{
+        background-color: #1B77BC;
+    }
+    .bg-light-gray{
+        background-color:#EDEDED;
+    }
+    .custom-bg{
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center center;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+        margin-bottom:-32px;
+    }
+
+
+
+    /* font-colors */
+    .light-blue{
+        color: #2670E8;
+    }
+    .deep-gray{
+        color: #333333;
+    }
+    .gray{
+        color:#636363;
+    }
+    .yellow{
+        color:#FFD000;
+    }
+    .red{
+        color:#E61C22;
+    }
+    .card-row{
+
+    }
+    /* STYLE */
         .font-rawline {
             font-family: 'Rawline', sans-serif;
         }
-
-
-    /* SIZE */
+   /* SIZE */
         /*.small{*/
             /*font-size: 18px;*/
         /*}*/
@@ -197,7 +246,24 @@ a h1.custom-h1{
             height: 24px;
             background-image: url(icon/arrow-down-2-bold.png);
         }
-
+/*        .arrow-down{*/
+        /*}*/
+/* SIZE */
+    @media (min-width: 1400px) {
+            .bg-image {
+                height: 100%;
+                background-image: url('images/dnit.jpg');
+                background-repeat: repeat;
+                background-attachment: scroll;
+                background-size: contain;
+                background-position: center center;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                padding-bottom: 50px;
+                margin-bottom:-32px;
+            }
+    }
 /* animation */
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
@@ -218,15 +284,9 @@ a h1.custom-h1{
     background-color: red;
   }
 /*Filter*/
-    .no-outline:focus{
-        outline: none;
-        box-shadow: none;
-    }
-    /* CUSTOM MARGINS PADDINGS */
     .m-top{
         margin-top: 40px;
     }
-
     .p-bottom{
         padding-bottom: 177px;
     }
@@ -269,9 +329,6 @@ a h1.custom-h1{
         color: #0C326F;
     }
     /* STYLE */
-        .font-rawline {
-            font-family: 'Rawline', sans-serif;
-        }
     /* SIZE */
         .small{
             font-size: 16px;
@@ -286,40 +343,7 @@ a h1.custom-h1{
             margin-bottom: 0;
             color: #333333;
         }
-
-/* ICON */
-        .icon-menu{
-            width: 28px;
-            height: 28px;
-            background-image: url(icon/icone-menu.png);
-            background-repeat: no-repeat;
-        }
-        .icon-arrow{
-            width: 24px;
-            height: 24px;
-            background-image: url(icon/arrow-down-2-bold.png);
-       }
-
 /* animation */
-.blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
-  }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-  .red-background {
-    background-color: red;
-  }
-
   /*button*/
   .btn{
       display:flex;

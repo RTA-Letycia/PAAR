@@ -1,12 +1,19 @@
 @extends('template.template')
 
 @section('content')
+{{--<<<<<<< HEAD--}}
     <div class="row justify-content-center pr-4 pl-2">
         <hr class="col-sm-8 col-md-10 col-lg-11 custom-m">
     </div>
     <div class="row d-flex justify-content-center mt-4 mb-4 pb-4 mt-sm-4 pr-3">
         <input class="col-sm-6 col-md-8 col-lg-10 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
         <div class="col-sm-1 col-lg-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-right">
+{{--=======--}}
+    {{--<hr class="col-sm-9 col-md-10 col-lg-11">--}}
+    {{--<div class="row d-flex justify-content-center mt-5 mb-4 mt-sm-4">--}}
+        {{--<input class="col-sm-7 col-md-8 col-lg-10 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">--}}
+        {{--<div class="col-sm-2 col-lg-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-right">--}}
+{{-->>>>>>> 7aeeae9 (:bug: uninstall test db and implement latest db. Fixes #14)--}}
                     Filtro
             <span class="material-symbols-outlined light-blue">
                 arrow_drop_down
@@ -19,6 +26,7 @@
                 <a class= "dropdown-item" href="#">Meio Ambiente</a>
             </div>
         </div>
+{{--<<<<<<< HEAD--}}
     </div>
     <div class="row justify-content-between mr-5 ml-5 mb-3">
         <div class="col-lg-4 d-flex p-0">
@@ -69,4 +77,11 @@
             </table>
         </div>
     </div>
+{{--=======--}}
+    </div>
+ {{--   <hr class="col-sm-9 col-md-10 col-lg-11">--}}
+    </div>
+    </div>
+
+{{-->>>>>>> 7aeeae9 (:bug: uninstall test db and implement latest db. Fixes #14)--}}
 @endsection
