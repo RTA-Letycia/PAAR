@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow:hidden;
 }
 .container-fluid{
     padding:0;
@@ -92,17 +93,9 @@ a h1.custom-h1{
         outline: none;
         box-shadow: none;
     }
-/*>>>>>>> 7aeeae9 (:bug: uninstall test db and implement latest db. Fixes #14)*/
-    /*.rounded-input-left {*/
-        /*border-top-left-radius: 6px;*/
-        /*border-bottom-left-radius: 6px;*/
-    /*}*/
-    /*.rounded-button-left {*/
-        /*border-top-right-radius: 6px;*/
-        /*border-bottom-right-radius: 6px;*/
-    /*}*/
-/*<<<<<<< HEAD*/
-/*=======*/
+    .m-input{
+        margin:20px 0 20px 0;
+    }
     .rounded-input-left {
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
@@ -131,47 +124,62 @@ a h1.custom-h1{
         /*padding-bottom: 50px;*/
         /*margin-bottom:-32px;*/
     /*}*/
-        .mt-row-inf{
-            margin-top: 184px;
-        }
         .card-row{
             display:flex;
-            /*height: 185px;*/
-            height: 294px;
+            height: 182px;
             background-color: #0C326F;
             justify-content:space-around;
             flex-wrap: nowrap;
+            margin: 0 0 84px 0;
         }
+
     @media (min-width: 768px){
+        .user-label{
+            justify-content:end;
+        }
         .custom-m{
-            margin-left: 44px;
-            margin-right: 46px;
+            margin:0 46px 0 44px;
+        }
+        .custom-bg{
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
         }
     }
     @media (min-width: 992px){
+        .card-row{
+            justify-content:center;
+        }
         .custom-m{
             margin:15px 0 15px 0;
         }
-        .mt-row-inf{
-            margin-top: 200px;
+    }
+    @media (min-width: 1200px){
+        .custom-bg{
+            background-size:contain;
         }
-        .custom-bg {
-            background-size: contain;
-            background-repeat:repeat;
+    }
+    @media (min-width: 992px){
+        .card-row{
+            justify-content:center;
+        }
+        .custom-m{
+            margin:15px 0 15px 0;
         }
     }
     @media (min-width: 1200px){
-            .mt-row-inf{
-                margin-top: 216px;
-        }
-            .card-row{
-                justify-content: center;
-        }
+            ./*card-row{*/
+            ./*card-row{*/
+                /*margin-top:84px;*/
+        /*}*/
             .intern-card{
             height:126px;
         }
     }
     @media (min-width: 1400px){
+        .custom-bg{
+            background-repeat:repeat;
+        }
     }
 /* TEMPLATE*/
     /* background-colors */
@@ -181,18 +189,18 @@ a h1.custom-h1{
     .bg-light-gray{
         background-color:#EDEDED;
     }
-    .custom-bg{
-        height: 100%;
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-size: contain;
-        background-position: center center;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-        margin-bottom:-32px;
-    }
+/*    .custom-bg{*/
+        /*height: 100%;*/
+        /*background-repeat: repeat;*/
+        /*background-attachment: scroll;*/
+        /*background-size: contain;*/
+        /*background-position: center center;*/
+        /*overflow: hidden;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*padding-bottom: 50px;*/
+        /*margin-bottom:-32px;*/
+    /*}*/
 
 
 
@@ -211,9 +219,6 @@ a h1.custom-h1{
     }
     .red{
         color:#E61C22;
-    }
-    .card-row{
-
     }
     /* STYLE */
         .font-rawline {
@@ -247,23 +252,8 @@ a h1.custom-h1{
             background-image: url(icon/arrow-down-2-bold.png);
         }
 /*        .arrow-down{*/
+
         /*}*/
-/* SIZE */
-    @media (min-width: 1400px) {
-            .bg-image {
-                height: 100%;
-                background-image: url('images/dnit.jpg');
-                background-repeat: repeat;
-                background-attachment: scroll;
-                background-size: contain;
-                background-position: center center;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-                padding-bottom: 50px;
-                margin-bottom:-32px;
-            }
-    }
 /* animation */
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;

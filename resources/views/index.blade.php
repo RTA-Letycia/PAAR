@@ -4,7 +4,7 @@
 @endsection
 @section('content')
         <!-- row inferior -->
-        <div class="row card-row align-items-center mt-row-inf">
+        <div class="row card-row d-flex align-items-center w-100">
             <div class="col-3 col-md-4 col-lg-3 col-xl-2">
                 <div class="row d-flex justify-content-center">
                     <div class="intern-card card col-md-9 flex-column flex-wrap justify-content-around pb-4">
