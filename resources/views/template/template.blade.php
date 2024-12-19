@@ -18,26 +18,24 @@
 </head>
 <body class="cust-body custom-bg">
         <header class="container-fluid">
-                    {{--<div class="flex-column">--}}
-                    <div>
                         <!-- row header   -->
-                        <div class="row pr-5">
-                            <div class="col-sm-12 d-flex align-items-end user-label">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-12 d-flex align-items-end user-label justify-content-end">
                                 <h1 class="deep-gray font-rawline small mr-1">Olá,</h1>
                                 <h1 class="deep-gray font-rawline small"><strong>Usuário</strong></h1>
                                 <div class="icon-arrow"></div>
                             </div>
                         </div>
                             <!-- 2 header -->
-                        <div class="row pl-5">
-                            <div class="col-sm-10 col-lg-6 d-flex align-items-center">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-6 d-flex align-items-center">
                                 <div class="icon-menu mr-2"></div>
                                 <h1 class="deep-gray font-rawline small pt-2">Departamento Nacional de Infraestrutura de Transportes</h1>
                             </div>
                         </div>
                     </div>
         </header>
-        <main class="container-fluid h-100 d-flex justify-content-center align-items-center">
+        <main class="container-fluid h-100">
                 @yield('content')
         </main>
     <script src="{{ asset('js/app.js') }}" defer></script>

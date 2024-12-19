@@ -1,13 +1,12 @@
 @extends('template.template')
 
 @section('content')
-    <div class="h-100 w-100 pr-5 pl-5">
-            <hr class="custom-m">
+            <hr>
         <div class="row d-flex-inline m-input">
-            <input class="col-sm-10 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
-            <div class="col-sm-2 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-right">
+            <input class="col-11 custom-filter no-outline rounded-input-left font-italic" type="text" id="searchFilter" placeholder="Digite sua pesquisa">
+            <div class="col-1 btn input-group-append custom-dropdown custom-filter d-flex align-items-center justify-content-center rounded-button-right ">
                         Filtro
-                <span class="material-symbols-outlined light-blue">
+                <span class="material-symbols-outlined">
                     arrow_drop_down
                 </span>
                 <div class="dropdown-menu flex-column">
@@ -21,15 +20,14 @@
         </div>
         <div class="row d-flex-inline m-input justify-content-between">
                 <h1 class="custom-h1">Processos Gerenciados</h1>
-            <div class="d-flex justify-content-end">
-                <a class="btn bg-light-gray justify-content-center intern-card-hover" href="{{route('processIns')}}">
+            <div class="d-flex justify-content-end"> <a class="btn bg-light-gray justify-content-center intern-card-hover" href="{{route('processIns')}}">
                     <h1 class="custom-h1">Inserir Processo</h1>
                 </a>
             </div>
         </div>
         <div class= "row">
             <div class="col-12">
-                <table class="table table-hover table-border">
+                <table class="table table-hover table-border table-responsive">
                     <thead class="bg-light-gray font-rawline custom-h1">
                         <tr>
                             <th scope="col">Tipo de Contrato</th>
@@ -42,12 +40,14 @@
                             <th scope="col">CNPJ</th>
                             <th scope="col">Última Movimentação</th>
                             <th scope="col">Status PAAR</th>
+                        </tr>
+                    </thead>
                     <tbody>
                     {{--@foreach($procs as $proc)--}}
                         <tr>
                             <td></td>
                             <td>@mdo</td>
-                            </tr>
+                        </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
@@ -64,8 +64,4 @@
                 </table>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
-    </div>
 @endsection
