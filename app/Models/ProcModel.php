@@ -11,7 +11,10 @@ class ProcModel extends Model
     protected $table='processo';
 
     public function relUser(){
-        return $this->belongsTo('App\Models\User','id_user');
+        return $this->belongsTo('App\Models\User','user_id');
     }
+
+    public function relProcModelStatus(){
+        return $this->belongsTo('App\Models\status','process_status_id');
+    }:
 }
-//para cada processo tem que ter um usuário

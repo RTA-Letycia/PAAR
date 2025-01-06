@@ -46,7 +46,7 @@ class User extends Authenticatable
     }
 
     public function relProcModel(){
-        return $this->hasMany('App\Models\ProcModel','id_user');
+        return $this->hasMany('App\Models\ProcModel','user_id');
     }
 }
 
