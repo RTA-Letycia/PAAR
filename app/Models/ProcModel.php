@@ -16,5 +16,5 @@ class ProcModel extends Model
 
     public function relProcModelStatus(){
         return $this->belongsTo('App\Models\status','process_status_id');
-    }:
+    }
 }
