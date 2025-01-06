@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('question', function(Blueprint $table){
             $table->id();
             $table->string('question_txt');
+            $table->unsignedBigInteger('question_status_id');
+            $table->foreign('question_status_id')->references('id')->on('status')->onDelete('cascade');
         });
     }
 
@@ -22,6 +24,11 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('question', function(Blueprint $table){
+            $table->dropForeign(['question_status_id']);
+            $table->dropColumn('question_status_id');
+        });
+
         Schema::dropIfExists('question');
     }
 };
