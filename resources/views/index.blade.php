@@ -42,7 +42,7 @@
             <div class="col-3 col-md-2 col-lg-3 col-xl-2">
                 <div class="row d-flex justify-content-center">
                     <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
-                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('process')}}" >
+                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('process.show')}}" >
                             <h1 class="font-rawline small">Processos</h1>
                         </a>
                     </div>

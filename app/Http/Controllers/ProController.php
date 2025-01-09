@@ -8,42 +8,29 @@ use App\Models\ProcModel;
 
 class ProController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-
-    private $objUser;
+    //private $objUser;
     private $objProc;
 
     public function __construct() {
-        $this->objUser= new User();
+        //$this->objUser= new User();
         $this->objProc= new ProcModel();
     }
 
     public function index()
     {
-        return view('index');
+      /*  return view('index');*/
     }
     public function map()
     {
-        return view('map');
+        //return view('map');
     }
     public function move()
     {
-        return view ('move');
+        //return view ('move');
     }
-    public function processIns()
-    {
+      public function create(){
         return view('processIns');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create(){
-
-    }
-
     /**
      * Store a newly created resource in storage.
      */
@@ -62,14 +49,12 @@ class ProController extends Controller
         /*return view('processo', compact('show'));*/
     }
 
-    public function process()
+    public function showProcess()
     {
-        //$processes=$this->objProc->all();
-        //  dd('teste de depuração');
-         //return view('processo', compact('processes'));
-         return view('processo');
+        $processes=$this->objProc->all();
+         /*dd('teste de depuração');*/
+        return view('processo', compact('processes'));
     }
-
     /**
      * Show the form for editing the specified resource.
      */

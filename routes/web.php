@@ -1,24 +1,23 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProController;
 
-//pagina inicial
-Route::resource('proc', ProController::class);
-Route::get('/', [ProController::class, 'index']);
+Route::get('/', [HomeController::class, 'showHomePage']);
 //pagina mapa de fluxo
-Route::get('map',[ProController::class,
+Route::get('map',[HomeController::class,
 'map'])->name('map');
 //pagina de processos
-Route::get('process',[ProController::class,
-'process'])->name('process');
+Route::get('process',[ProController::class, 'showProcess'])->name('process.show');
+//redirect´s
+Route::get('/redirect-to-process', [HomeController::class, 'redirectToProcessPage'])->name('redirect.process');
 //pagina de movimentos
-Route::get('move',[ProController::class,
+Route::get('move',[HomeController::class,
 'move'])->name('move');
-//btn inserir processo
-Route::get('processIns',[Procontroller::class,
-'processIns'])->name('processIns');
+//btn inserir processo:
 
-Auth::routes();
+Route::get('processIns',[ProController::class,
+'processIns'])->name('processIns');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

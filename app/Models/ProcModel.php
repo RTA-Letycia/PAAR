@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ProcModel extends Model
 {
     use HasFactory;
-    protected $table='processo';
+    protected $table='process';
 
     public function relUser(){
         return $this->belongsTo('App\Models\User','user_id');
