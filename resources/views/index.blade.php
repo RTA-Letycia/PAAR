@@ -24,7 +24,7 @@
             <div class="col-3 col-md-2 col-lg-3 col-xl-2">
                 <div class="row d-flex justify-content-center">
                     <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
-                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('move')}}">
+                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('move.show')}}">
                             <h1 class="font-rawline small text-center">Histórico de Movimentações</h1>
                         </a>
                     </div>
@@ -33,7 +33,7 @@
             <div class="col-3 col-md-2 col-lg-3 col-xl-2">
                 <div class="row d-flex justify-content-center">
                     <div class="intern-card intern-card-hover card col-lg-8 align-items-center justify-content-center">
-                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('map')}}">
+                        <a class="btn d-flex align-items-center justify-content-center col-lg-12" href="{{route('redirect.map')}}">
                             <h1 class="font-rawline small">Mapa de Fluxo</h1>
                         </a>
                     </div>

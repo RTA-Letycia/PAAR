@@ -28,8 +28,8 @@ class ProController extends Controller
     {
         //return view ('move');
     }
-      public function create(){
-        return view('processIns');
+    public function redirectToCreate(){
+        return view('processCreate');
     }
     /**
      * Store a newly created resource in storage.
@@ -38,7 +38,6 @@ class ProController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      */

@@ -18,4 +18,10 @@ class HomeController extends Controller
     public function redirectToProcessPage(){
         return redirect()->route(process.show);
     }
+    public function redirectToMapPage(){
+        return view('map');
+    }
+    public function redirectToMove(){
+        return view('move');
+    }
 }

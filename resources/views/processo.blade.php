@@ -20,7 +20,7 @@
         </div>
         <div class="row d-flex-inline m-input justify-content-between">
                 <h1 class="custom-h1">Processos Gerenciados</h1>
-            <div class="d-flex justify-content-end"> <a class="btn bg-light-gray justify-content-center intern-card-hover" href="{{route('processIns')}}">
+            <div class="d-flex justify-content-end"> <a class="btn bg-light-gray justify-content-center intern-card-hover" href="{{route('procCreate.show')}}">
                     <h1 class="custom-h1">Inserir Processo</h1>
                 </a>
             </div>
