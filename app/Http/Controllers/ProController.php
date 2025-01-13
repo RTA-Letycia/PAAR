@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\ProcModel;
 
-class ProController extends Controller
+class ProController extends BaseController
 {
     //private $objUser;
     private $objProc;

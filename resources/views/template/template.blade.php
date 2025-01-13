@@ -28,7 +28,7 @@
                         </div>
                             <!-- 2 header -->
                         <div class="row">
-                                <a class="btn col-sm-8 col-md-6 d-flex align-items-center">
+                                <a class="btn col-sm-8 col-md-4 d-flex align-items-center" href={{route('redirect.homePage')}}>
                                     <div class="icon-menu mr-2"></div>
                                     <h1 class="deep-gray font-rawline small pt-2">Departamento Nacional de Infraestrutura de Transportes</h1>
                                 </a>

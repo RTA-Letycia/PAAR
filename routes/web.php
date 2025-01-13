@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProController;
 
-Route::get('/', [HomeController::class, 'showHomePage']);
+Route::get('/', [HomeController::class, 'showHomePage'])->name('homePage');
+Route::get('/redirect-home', [HomeController::class, 'showHomePage'])->name('redirect.homePage');
 //redirect pagina mapa
 Route::get('/redirect-to-map', [HomeController::class, 'redirectToMapPage'])->name('redirect.map');
 //redirect pagina de processos
